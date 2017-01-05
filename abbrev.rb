@@ -19,6 +19,8 @@
 # //                     "-"      " "    " "     " "     "!"
 # === "e6t-r3s are r4y fun!
 
+# https://www.codewars.com/kata/5375f921003bf62192000746/train/ruby
+
 class Abbreviator
 
   def self.abbreviate(string)
