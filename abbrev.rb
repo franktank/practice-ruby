@@ -32,3 +32,12 @@ class Abbreviator
 end
 
 puts Abbreviator.abbreviate("DOGGGGG-DOGGOOOOOOO")
+
+# gsub -> find and replace all
+=begin
+  * Regex notes
+  * () -> used to capture groups, $1,$2,..$n can be used to access what is captured
+  * {2,} -> 2 or more
+  * \w -> word character
+  * #{} used for string interpolation
+=end
