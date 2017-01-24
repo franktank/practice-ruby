@@ -25,21 +25,10 @@ class Abbreviator
 
   def self.abbreviate(string)
     # abbreviate the string
-    arr = string.split(" ")
-    puts arr
-    arr = arr.map do |e|
-      if e.scan(/[a-zA-Z]/i).size < 4
-        e = e
-      elsif h = e =~ /-/
-        e = e.split("-").map { |w| w = w[0] + "#{w.length - 2}" + w[w.length - 1] }.join("-")
-      elsif e =~ /[a-zA-Z](\W)/
-        e = e.split(".")
-        
-      else
-        e = e[0] + "#{e.length - 2}" + e[e.length - 1]
-      end
+    string.gsub(/(\w)(\w{2,})(\w)/) do |word|
+      "#{$1}#{$2.length}#{$3}"
     end
-    arr.join(" ")
   end
-  
 end
+
+puts Abbreviator.abbreviate("DOGGGGG-DOGGOOOOOOO")
