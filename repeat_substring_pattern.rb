@@ -42,3 +42,6 @@ p repeated_substring_pattern("ABCAAA")
 p repeated_substring_pattern("ABA")
 
 p repeated_substring_pattern("ABAB")
+
+
+# git reset HEAD^ is kinda cool :)
