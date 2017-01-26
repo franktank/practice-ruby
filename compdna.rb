@@ -5,10 +5,13 @@
 def DNA_strand(dna)
   n = dna.split("")
   mapping = {'T' => 'A', 'A' => 'T', 'C' => 'G', 'G' => 'C'}
-  n = n.map {|e| mapping[e] || e}
+  # n = n.map {|e| mapping[e] || e}
+  n.map! {|e| mapping[e] || e}
   n = n.join("")
   return n
 end
+
+puts DNA_strand("ATGC")
 
 # best solution
 
