@@ -1,0 +1,1 @@
+# Find majority element in sorted and unsorted array
