@@ -6,15 +6,6 @@ a2 = [400, 100, 9, 16, 25, 100]
 # Square each array separately
 # Merge algorithm
 
-def square(a)
-    pos_arr = []
-    neg_arr = []
-    i = 0
-    while true
-        break
-    end
-end
-
 def square_this(a)
     # find last index of negative number
     ind_of_last_neg = -1
