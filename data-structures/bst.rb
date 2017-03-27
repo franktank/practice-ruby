@@ -142,6 +142,8 @@ def mirrored?(left, right)
     left.value == right.value && mirrored?(left.left, right.right) && mirrored(left.right, right.left)
 end
 
+
+# This code can be used to make BST into balanced BST
 a = [5,7,12,15,18,20]
 # Nondecreasing array to balanced BST
 def arrtobst(a, bst)
